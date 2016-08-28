@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+
+# a (very) simple expect script I use to make things time out elegantly.
+# Abby Embree 2016
+
+set timeout [lindex $argv 0]
+set arguments [lindex $argv 2]
+spawn [lindex $argv 1] $arguments
+
+expect
