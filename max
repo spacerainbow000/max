@@ -1,6 +1,6 @@
 #!/usr/bin/expect -f
 
-# a (very) simple expect script I use to make things time out elegantly.
+# quiet timeout utility
 # Abby Embree 2016
 
 set timeout [lindex $argv 0]
